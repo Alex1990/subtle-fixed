@@ -1,0 +1,93 @@
+/* fixed position header bar */
+html {
+    background-image: url(about:blank);
+}
+#me-header {
+    position:absolute;
+    top: expression(0+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+'px');
+    background: #555 none;
+    height: 36px;
+}
+
+/* Fix the z-index after using DD_deblatedPNG.js */
+#me-header .wrap {
+    position: relative;
+    z-index: 101;
+}
+
+/* The priority of a:hover in IE6 is about 21 greater than other's browser,
+   so we must override adding one id */
+#me-header .logo a {
+    color: #eb623a;
+}
+#me-header .logo a:active {
+    background: transparent;
+}
+#me-header .nav a {
+    color: #aeab9d;
+}
+#me-header .nav a:hover,
+#me-header .nav a:focus {
+    color: #eb623a;
+}
+#me-header .nav a:active {
+    color: #f8f8f8;
+}
+#me-main .cate-item a {
+    color: #333;
+}
+#me-main .cate-item a:hover {
+    color: #eb623a;
+}
+#me-main .cate-item a:active {
+    color: #f8f8f8;
+}
+#me-main .post-title a {
+    color: #222;
+}
+#me-main .post-title a:hover {
+    color: #eb623a;
+}
+#me-main .post-title a:active {
+    color: #f8f8f8;
+}
+#me-main .pagination a {
+    padding: 2px 7px;
+    color: #444;
+    border: 1px solid #ddd;
+    background: #eee;
+}
+#me-main .pagination a:hover {
+    color: #63aa9c;
+}
+#me-main .comment-edit a {
+    font-size: 0.875em;
+    color: #777;
+}
+#me-main .comment-edit a:hover {
+    color: #222;
+}
+#me-main .comment-edit a:active {
+    color: #f8f8f8;
+}
+#me-main .comment-reply a {
+    color: #777;
+}
+#me-main .comment-reply a:hover {
+    color: #222;
+}
+#me-main .comment-reply a:active {
+    color: #f8f8f8;
+}
+/* Fix the stepdown list items */
+.cat-item {
+    zoom: 1;
+}
+/* post image max-width */
+.post-content img {
+    width: expression(document.body.clientWidth > 550 ? "550px" : "auto");
+}
+/* post content pre overflow auto needs demension */
+.post-content pre {
+    width: 600px;
+}

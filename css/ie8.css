@@ -1,0 +1,8 @@
+/* opacity */
+.thumbnail a:hover img {
+    filter:alpha(opacity=75);
+}
+/* search input border */
+.search .search-input {
+    border-color:#ddd;
+}
