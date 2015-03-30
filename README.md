@@ -8,3 +8,7 @@ A wordpress theme
 ## Compatibility
 
 IE6+ and other modern browsers.
+
+## License
+
+MIT.
